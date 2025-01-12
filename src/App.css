@@ -39,12 +39,27 @@ body {
   background: red;
 }
 
+.image-container3 button:hover {
+  background-color: #F5F0CD;
+  color: cyan;
+  border: 2px solid #333;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container4 button:hover {
+  background-color: #F5F0CD;
+  color: cyan;
+  border: 2px solid #333;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 /* Ensure image-container does not cause overflow */
 .image-container {
   width: calc(100% - 40px);
   /* Add padding or margins if needed */
   max-width: 500px;
-  height: 300px;
   margin: 30px auto;
   border-radius: 15px;
   overflow: hidden;
@@ -56,17 +71,11 @@ body {
   color: white;
 }
 
-.image-container button:hover {
-  background: cyan;
-  color: #F5F0CD;
-}
-
 /* Ensure image-container does not cause overflow */
 .image-container2 {
   width: calc(100% - 40px);
   /* Add padding or margins if needed */
   max-width: 500px;
-  height: 300px;
   margin: 30px auto;
   border-radius: 15px;
   overflow: hidden;
@@ -77,6 +86,7 @@ body {
   border: none;
   color: white;
 }
+
 
 .quote {
   margin-top: 0;
@@ -101,6 +111,14 @@ body {
   padding-top: 20px;
   padding-bottom: 70px;
 }
+
+.App2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  height: 943px;
+}
+
 
 /* Arrow Button Styles */
 .arrow-buttons {
@@ -243,6 +261,20 @@ body {
   border-radius: 10px;
   border: 2px solid #0057A3;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #0057A3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 27.5px;
 }
 
 .card-text {

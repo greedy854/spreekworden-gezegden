@@ -388,7 +388,9 @@ function App() {
           className={active === 0 ? "active" : ""}
           onClick={() => setActive(0)}
         >
-          <img src={home} alt="Home" />
+          <Link to="/">
+            <img src={home} alt="Home" />
+          </Link>
         </div>
         <div
           className={active === 1 ? "active" : ""}
@@ -402,7 +404,9 @@ function App() {
           className={active === 2 ? "active" : ""}
           onClick={() => setActive(2)}
         >
-          <img src={settings} alt="Settings" />
+          <Link to="/settings">
+            <img src={settings} alt="Settings" />
+          </Link>
         </div>
       </nav>
     </div>
