@@ -417,6 +417,14 @@ function App() {
             <img src={settings} alt="Settings" />
           </Link>
         </div>
+        <div
+          className={active === 4 ? "active" : ""}
+          onClick={() => setActive(4)}
+        >
+          <Link to="/quiz">
+            <img src={settings} alt="quiz" />
+          </Link>
+        </div>
       </nav>
     </div>
   );
