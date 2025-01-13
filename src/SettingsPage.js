@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './App.css'; // Assuming the provided CSS is in App.css or relevant CSS file
-import home from './assets/home.svg';
-import rss from './assets/heart.svg';
-import settings from './assets/settings.svg';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./App.css"; // Assuming the provided CSS is in App.css or relevant CSS file
+import home from "./assets/home.svg";
+import rss from "./assets/heart.svg";
+import settings from "./assets/settings.svg";
 
 const SettingsPage = () => {
   const [active, setActive] = useState(2); // Initially, the "Settings" icon should be active
