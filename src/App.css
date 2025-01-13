@@ -95,12 +95,12 @@ body {
 }
 
 .slideshow-image {
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease-in-out;
-  border: 1px solid #81BFDA;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  width: 100%; /* Ensures images fill the container width */
+  height: 500px; /* Ensures the image maintains its aspect ratio */
+  object-fit: cover; /* If you want the image to fill the container */
 }
+
+
 
 /* Content Container Styles */
 .content-container {
