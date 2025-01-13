@@ -4,6 +4,7 @@ import "./App.css"; // Assuming the provided CSS is in App.css or relevant CSS f
 import home from "./assets/home.svg";
 import rss from "./assets/heart.svg";
 import settings from "./assets/settings.svg";
+import info from "./assets/info.svg";
 
 const TermsPage = () => {
   const [active, setActive] = useState(0); // Initially, the "Home" icon should be active
@@ -438,6 +439,14 @@ const TermsPage = () => {
               <img src={home} alt="Home" />
             </Link>
           </div>
+          <div
+          className={active === 1 ? "active" : ""}
+          onClick={() => setActive(1)}
+        >
+          <Link to="/about-us">
+            <img src={info} alt="About us" />
+          </Link>
+        </div>
           <div
             className={active === 1 ? "active" : ""}
             onClick={() => setActive(1)}

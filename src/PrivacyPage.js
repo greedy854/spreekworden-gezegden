@@ -4,6 +4,7 @@ import './App.css'; // Assuming the provided CSS is in App.css or relevant CSS f
 import home from './assets/home.svg';
 import rss from './assets/heart.svg';
 import settings from './assets/settings.svg';
+import info from "./assets/info.svg";
 
 const PrivacyPage = () => {
   const [active, setActive] = useState(1); // Initially, the "Heart" (rss) icon should be active
@@ -94,16 +95,24 @@ const PrivacyPage = () => {
             </Link>
           </div>
           <div
-            className={active === 1 ? "active" : ""}
-            onClick={() => setActive(1)}
+          className={active === 1 ? "active" : ""}
+          onClick={() => setActive(1)}
+        >
+          <Link to="/about-us">
+            <img src={info} alt="About us" />
+          </Link>
+        </div>
+          <div
+            className={active === 2 ? "active" : ""}
+            onClick={() => setActive(2)}
           >
             <Link to="/about-us">
               <img src={rss} alt="Heart Icon" className="heart-icon" />
             </Link>
           </div>
           <div
-            className={active === 2 ? "active" : ""}
-            onClick={() => setActive(2)}
+            className={active === 3 ? "active" : ""}
+            onClick={() => setActive(3)}
           >
             <Link to="/settings">
               <img src={settings} alt="Settings" />
