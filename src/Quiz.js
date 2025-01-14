@@ -121,7 +121,7 @@ const shuffleArray = (array) => {
 };
 
 const App = () => {
-  const [active, setActive] = useState(0); // Default to 0 (Home)
+  const [active, setActive] = useState(3); // Default to 3 (Quiz)
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -201,50 +201,50 @@ const App = () => {
               ))}
             </>
           )}
+          <nav className="navbar">
+            <div
+              className={active === 0 ? "active" : ""}
+              onClick={() => setActive(0)}
+            >
+              <Link to="/">
+                <img src={home} alt="Home" />
+              </Link>
+            </div>
+            <div
+              className={active === 1 ? "active" : ""}
+              onClick={() => setActive(1)}
+            >
+              <Link to="/about-us">
+                <img src={info} alt="About us" />
+              </Link>
+            </div>
+            <div
+              className={active === 2 ? "active" : ""}
+              onClick={() => setActive(2)}
+            >
+              <Link to="/">
+                <img src={rss} alt="Heart Icon" className="heart-icon" />
+              </Link>
+            </div>
+            <div
+              className={active === 3 ? "active" : ""}
+              onClick={() => setActive(3)}
+            >
+              <Link to="/quiz">
+                <img src={quiz} alt="Quiz" />
+              </Link>
+            </div>
+            <div
+              className={active === 4 ? "active" : ""}
+              onClick={() => setActive(4)}
+            >
+              <Link to="/settings">
+                <img src={settings} alt="Settings" />
+              </Link>
+            </div>
+          </nav>
         </div>
       )}
-      <nav className="navbar">
-        <div
-          className={active === 0 ? "active" : ""}
-          onClick={() => setActive(0)}
-        >
-          <Link to="/">
-            <img src={home} alt="Home" />
-          </Link>
-        </div>
-        <div
-          className={active === 1 ? "active" : ""}
-          onClick={() => setActive(1)}
-        >
-          <Link to="/about-us">
-            <img src={info} alt="About us" />
-          </Link>
-        </div>
-        <div
-          className={active === 2 ? "active" : ""}
-          onClick={() => setActive(2)}
-        >
-          <Link to="/">
-            <img src={rss} alt="Heart Icon" className="heart-icon" />
-          </Link>
-        </div>
-        <div
-          className={active === 3 ? "active" : ""}
-          onClick={() => setActive(3)}
-        >
-          <Link to="/quiz">
-            <img src={quiz} alt="Quiz" />
-          </Link>
-        </div>
-        <div
-          className={active === 4 ? "active" : ""}
-          onClick={() => setActive(4)}
-        >
-          <Link to="/settings">
-            <img src={settings} alt="Settings" />
-          </Link>
-        </div>
-      </nav>
     </div>
   );
 };

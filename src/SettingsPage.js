@@ -11,7 +11,7 @@ import info from "./assets/info.svg";
 import quiz from "./assets/quiz.svg";
 
 const SettingsPage = () => {
-  const [active, setActive] = useState(2); // Initially, the "Settings" icon should be active
+  const [active, setActive] = useState(4); // Initially, the "Settings" icon should be active
 
   return (
     <div className="App2">
@@ -38,6 +38,12 @@ const SettingsPage = () => {
             <div className="image-container4">
               <Link to="/privacyverklaring">
                 <button>Privacyverklaring</button>
+              </Link>
+            </div>
+
+            <div className="image-container4">
+              <Link to="/credits">
+                <button>Credits</button>
               </Link>
             </div>
           </div>

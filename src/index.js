@@ -7,8 +7,8 @@ import AboutUs from "./AboutUs"; // Import the About Us page
 import SettingsPage from "./SettingsPage"; // Import the Settings page
 import TermsPage from "./TermsPage"; // Import the Terms page
 import PrivacyPage from "./PrivacyPage"; // Import the Privacy Policy page
+import Credits from "./Credits"; // Import the Privacy Policy page
 import Quiz from "./Quiz"; // Import the Privacy Policy page
-import Payment from "./PaymentPage";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -24,9 +24,9 @@ root.render(
         {/* Gebruikersvoorwaarden route */}
         <Route path="/privacyverklaring" element={<PrivacyPage />} />{" "}
         {/* Privacyverklaring route */}
-        <Route path="/quiz" element={<Quiz />} />{" "}
+        <Route path="/credits" element={<Credits />} />{" "}
         {/* Privacyverklaring route */}
-        <Route path="/payment" element={<Payment />} />{" "}
+        <Route path="/quiz" element={<Quiz />} />{" "}
         {/* Privacyverklaring route */}
       </Routes>
     </Router>
