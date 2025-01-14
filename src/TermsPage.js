@@ -1,10 +1,14 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./App.css"; // Assuming the provided CSS is in App.css or relevant CSS file
+import "./App.css";
+import { useState, useEffect } from "react";
+import { Card, Button, Navbar, Nav, Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import { Link } from "react-router-dom"; // If you're using React Router for routing
 import home from "./assets/home.svg";
 import rss from "./assets/heart.svg";
 import settings from "./assets/settings.svg";
 import info from "./assets/info.svg";
+import quiz from "./assets/quiz.svg";
 
 const TermsPage = () => {
   const [active, setActive] = useState(0); // Initially, the "Home" icon should be active
@@ -440,24 +444,32 @@ const TermsPage = () => {
             </Link>
           </div>
           <div
-          className={active === 1 ? "active" : ""}
-          onClick={() => setActive(1)}
-        >
-          <Link to="/about-us">
-            <img src={info} alt="About us" />
-          </Link>
-        </div>
-          <div
             className={active === 1 ? "active" : ""}
             onClick={() => setActive(1)}
           >
             <Link to="/about-us">
-              <img src={rss} alt="Heart Icon" className="heart-icon" />
+              <img src={info} alt="About us" />
             </Link>
           </div>
           <div
             className={active === 2 ? "active" : ""}
             onClick={() => setActive(2)}
+          >
+            <Link to="/">
+              <img src={rss} alt="Heart Icon" className="heart-icon" />
+            </Link>
+          </div>
+          <div
+            className={active === 3 ? "active" : ""}
+            onClick={() => setActive(3)}
+          >
+            <Link to="/quiz">
+              <img src={quiz} alt="Quiz" />
+            </Link>
+          </div>
+          <div
+            className={active === 4 ? "active" : ""}
+            onClick={() => setActive(4)}
           >
             <Link to="/settings">
               <img src={settings} alt="Settings" />

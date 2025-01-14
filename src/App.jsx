@@ -8,6 +8,7 @@ import home from "./assets/home.svg";
 import rss from "./assets/heart.svg";
 import settings from "./assets/settings.svg";
 import info from "./assets/info.svg";
+import quiz from "./assets/quiz.svg";
 
 // Import the quotes from the JSON file
 import quotesData from "./quotes.json"; // Adjust the path if needed
@@ -200,6 +201,16 @@ function App() {
         <a href="">
           <img src="/Logo.png" alt="Logo" className="logo" />
         </a>
+      </div>
+
+      {/* Top Right Buttons */}
+      <div className="top-right-buttons">
+        <Button className="top-right-button">Login</Button>
+
+        {/* Using Link from react-router-dom to navigate to PaymentPage */}
+        <Link to="/payment">
+          <Button className="top-right-button">Payments</Button>
+        </Link>
       </div>
 
       {/* Content Section */}
@@ -413,16 +424,16 @@ function App() {
           className={active === 3 ? "active" : ""}
           onClick={() => setActive(3)}
         >
-          <Link to="/settings">
-            <img src={settings} alt="Settings" />
+          <Link to="/quiz">
+            <img src={quiz} alt="Quiz" />
           </Link>
         </div>
         <div
           className={active === 4 ? "active" : ""}
           onClick={() => setActive(4)}
         >
-          <Link to="/quiz">
-            <img src={settings} alt="quiz" />
+          <Link to="/settings">
+            <img src={settings} alt="Settings" />
           </Link>
         </div>
       </nav>

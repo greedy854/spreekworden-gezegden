@@ -8,6 +8,7 @@ import SettingsPage from "./SettingsPage"; // Import the Settings page
 import TermsPage from "./TermsPage"; // Import the Terms page
 import PrivacyPage from "./PrivacyPage"; // Import the Privacy Policy page
 import Quiz from "./Quiz"; // Import the Privacy Policy page
+import Payment from "./PaymentPage";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -17,10 +18,16 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about-us" element={<AboutUs />} /> {/* About Us route */}
-        <Route path="/settings" element={<SettingsPage />} /> {/* Settings page route */}
-        <Route path="/gebruikersvoorwaarden" element={<TermsPage />} /> {/* Gebruikersvoorwaarden route */}
-        <Route path="/privacyverklaring" element={<PrivacyPage />} /> {/* Privacyverklaring route */}
-        <Route path="/quiz" element={<Quiz />} /> {/* Privacyverklaring route */}
+        <Route path="/settings" element={<SettingsPage />} />{" "}
+        {/* Settings page route */}
+        <Route path="/gebruikersvoorwaarden" element={<TermsPage />} />{" "}
+        {/* Gebruikersvoorwaarden route */}
+        <Route path="/privacyverklaring" element={<PrivacyPage />} />{" "}
+        {/* Privacyverklaring route */}
+        <Route path="/quiz" element={<Quiz />} />{" "}
+        {/* Privacyverklaring route */}
+        <Route path="/payment" element={<Payment />} />{" "}
+        {/* Privacyverklaring route */}
       </Routes>
     </Router>
   </React.StrictMode>
