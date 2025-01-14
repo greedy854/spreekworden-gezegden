@@ -62,6 +62,25 @@ function App() {
   const [imageSearchQuery, setImageSearchQuery] = useState(""); // State for image search query
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // State for image index
   const [filteredImages, setFilteredImages] = useState(images); // State for filtered images
+  const [likedImages, setLikedImages] = useState([]);
+  const goToLikedImages = () => {
+    setActive(5); // You can create a new page or section for liked images
+  };
+
+
+  const toggleLike = () => {
+    const currentImage = filteredImages[currentImageIndex];
+    const isAlreadyLiked = likedImages.some((image) => image.src === currentImage.src);
+
+    if (isAlreadyLiked) {
+      // Remove the image from liked images if already liked
+      setLikedImages(likedImages.filter((image) => image.src !== currentImage.src));
+    } else {
+      // Add the image to liked images
+      setLikedImages([...likedImages, currentImage]);
+    }
+  };
+
 
   // Alphabet array for the 26 letters
   const alphabet = Array.from({ length: 26 }, (_, index) =>
@@ -229,6 +248,29 @@ function App() {
             </Button>
           </div>
         </div>
+
+        <div className="heart-icon-container">
+          <button onClick={toggleLike} className="heart-button">
+            <img src={rss} alt="Heart Icon" className="heart-icon" />
+          </button>
+        </div>
+
+
+        <div className="liked-images-section">
+          <h3>Your Liked Images</h3>
+          <div className="liked-images-gallery">
+            {likedImages.length > 0 ? (
+              likedImages.map((image, index) => (
+                <div key={index} className="liked-image-item">
+                  <img src={image.src} alt={`Liked ${index}`} />
+                </div>
+              ))
+            ) : (
+              <p>No liked images yet.</p>
+            )}
+          </div>
+        </div>
+
 
         {/* Download Button */}
         <div className="poep">
@@ -403,9 +445,9 @@ function App() {
         </div>
         <div
           className={active === 2 ? "active" : ""}
-          onClick={() => setActive(2)}
+          onClick={goToLikedImages}
         >
-          <Link to="/">
+          <Link to="/liked-images">
             <img src={rss} alt="Heart Icon" className="heart-icon" />
           </Link>
         </div>
