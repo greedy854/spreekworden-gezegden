@@ -220,18 +220,10 @@ function App() {
           <img src="/Logo.png" alt="Logo" className="logo" />
         </a>
       </div>
-
       {/* Content Section */}
       <div className="d-flex flex-column justify-content-center align-items-center">
         {/* Slideshow Image Display */}
         <div className="image-container">
-          {filteredImages.length > 0 && (
-            <img
-              src={filteredImages[currentImageIndex].src}
-              alt="Slideshow"
-              className="slideshow-image"
-            />
-          )}
           {/* Arrow Buttons */}
           <div className="arrow-buttons">
             <Button
@@ -240,6 +232,13 @@ function App() {
             >
               <i className="fas fa-arrow-left"></i>
             </Button>
+            {filteredImages.length > 0 && (
+            <img
+              src={filteredImages[currentImageIndex].src}
+              alt="Slideshow"
+              className="slideshow-image"
+            />
+          )}
             <Button
               className="arrow-button-right-arrow"
               onClick={goToNextImage}
