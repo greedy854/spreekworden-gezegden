@@ -1,0 +1,408 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Container Styling */
+.about-us {
+    text-align: center;
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    background: #9fd7dd;
+    /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading Styling */
+.about-us h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #35393a;
+    /* Gold color for headings */
+}
+
+/* Paragraph Styling */
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #35393a;
+}
+
+/* Section Styling */
+.section {
+    margin: 20px 0;
+    padding: 15px;
+    background: #69969b;
+    /* Light overlay for sections */
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effect for Section */
+.section:hover {
+    background: rgba(255, 255, 255, 0.123);
+    cursor: pointer;
+}
+
+/* Section Title Styling */
+.section h2 {
+    color: #F5F0CD;
+    font-size: 1.8em;
+    text-decoration: underline;
+}
+
+/* Active Section Content */
+.section p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #F5F0CD;
+}
+
+.container3 {
+    max-width: 38rem;
+    margin: 3rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    margin: 1rem;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    background-color: #acd3cf;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.container3 button:hover {
+    background-color: rgb(187, 224, 222);
+}
+
+.answer-button {
+    display: block;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #f1f1f1;
+    color: black;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.answer-button.correct {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.answer-button.incorrect {
+    background-color: #f44336;
+    border-color: #f44336;
+}
+
+.answer-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.score {
+    font-size: 1rem;
+    color: white;
+}
+
+.payment-page {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.payment-page h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payment-page button:hover {
+    background-color: #45a049;
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.top-right-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.top-right-button:hover {
+    background-color: #0056b3;
+}
+
+.heart-icon-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.heart-button {
+    background: transparent;
+    border: none;
+}
+
+.heart-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.liked-images-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.liked-image-item {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.liked-image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .search-input {
+        font-size: 14px;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .slideshow-image {
+        height: 350px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .circle {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 18px;
+    }
+
+
+
+}
+
+@media (max-width: 650px) {
+    .circle-row {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .slideshow-image {
+        height: 250px;
+        width: 250px;
+    }
+
+    .arrow-button-left-arrow {
+        height: 2rem;
+        margin-right: 0rem;
+    }
+
+    .arrow-button-right-arrow {
+        height: 2rem;
+        margin-left: 0rem;
+    }
+
+    .language-images {
+        flex-wrap: wrap;
+    }
+
+    .additional-images {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        width: 10rem;
+
+    }
+
+    .search-input::placeholder {
+        font-size: 0.6rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .circle {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .slideshow-image {
+        height: 200px;
+        width: 200px;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+
+    .navbar div {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Media Queries */
+    @media (max-width: 1024px) {
+        .search-input {
+            font-size: 14px;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .circle {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        .card-text {
+            font-size: 18px;
+        }
+
+        .navbar {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .circle {
+            width: 35px;
+            height: 35px;
+            font-size: 14px;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+
+
+        .navbar div {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+
+        .poep button {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+    }
+}
