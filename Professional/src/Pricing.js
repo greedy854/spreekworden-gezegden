@@ -41,7 +41,9 @@ const PricingTable = () => {
             </li>
           </ul>
           <p className="price">€0.00 / maand</p>
-          <button>Probeer 3 dagen gratis</button>
+          <a href="">
+            <button>Probeer 3 dagen gratis</button>
+          </a>
         </div>
 
         {/* Basic Plan */}
@@ -71,7 +73,9 @@ const PricingTable = () => {
             </li>
           </ul>
           <p className="price">€2.99 / maand</p>
-          <button>Koop nu!</button>
+          <a href="https://paypal.me/spreekwoorden?country.x=NL&locale.x=en_US">
+            <button>Koop nu!</button>
+          </a>
         </div>
 
         {/* Premium Plan */}
@@ -101,7 +105,9 @@ const PricingTable = () => {
             </li>
           </ul>
           <p className="price">€3.99 / maand</p>
-          <button>Koop nu!</button>
+          <a href="https://paypal.me/spreekwoorden?country.x=NL&locale.x=en_US">
+            <button>Koop nu!</button>
+          </a>
         </div>
 
         {/* Professional Plan */}
@@ -132,7 +138,9 @@ const PricingTable = () => {
             </li>
           </ul>
           <p className="price">€5.99 / maand</p>
-          <button>Koop nu!</button>
+          <a href="https://paypal.me/spreekwoorden?country.x=NL&locale.x=en_US">
+            <button>Koop nu!</button>
+          </a>
         </div>
 
         {/* Education Plan */}
@@ -163,7 +171,10 @@ const PricingTable = () => {
             </li>
           </ul>
           <p className="price">€9.99 / maand</p>
-          <button>Koop nu!</button>
+          <a href="https://paypal.me/spreekwoorden?country.x=NL&locale.x=en_US">
+            {" "}
+            <button>Koop nu!</button>
+          </a>
         </div>
       </div>
       <nav className="navbar2">
