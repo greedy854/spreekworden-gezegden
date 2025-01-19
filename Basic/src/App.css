@@ -1,4 +1,4 @@
-/* Global Styles */
+
 #root {
   width: 100%;
   background-color: #B1F0F7;
@@ -15,17 +15,17 @@ body {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1), 0px -5px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* Global Font Family */
+
 * {
   font-family: 'Roboto', sans-serif;
 }
 
-/* App Container Styles */
+
 .bg-navy {
   background-color: #0057A3 !important;
 }
 
-/* Logo Header Styles */
+
 .logo-header {
   text-align: center;
   margin-top: 20px;
@@ -65,10 +65,10 @@ body {
   color: white;
 }
 
-/* Ensure image-container does not cause overflow */
+
 .image-container2 {
   width: calc(100% - 40px);
-  /* Add padding or margins if needed */
+
   max-width: 500px;
   margin: 30px auto;
   border-radius: 15px;
@@ -94,12 +94,12 @@ body {
 
 
 
-/* Content Container Styles */
+
 .content-container {
   margin-top: 30px;
 }
 
-/* App Container Styles */
+
 .App {
   text-align: center;
   padding-top: 20px;
@@ -135,7 +135,7 @@ body {
   margin-left: 1rem;
 }
 
-/* Search Bar Styles */
+
 .search-bar-container {
   width: 100%;
   display: flex;
@@ -186,7 +186,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 87, 163, 0.3);
 }
 
-/* Language Header Styles */
+
 .language-header {
   display: flex;
   align-items: center;
@@ -207,7 +207,7 @@ body {
   height: auto;
 }
 
-/* Alphabet Circle Section - Center and Fit */
+
 .alphabet-circles {
   display: flex;
   flex-direction: column;
@@ -246,7 +246,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Quote Card Styles */
+
 .card {
   width: 100%;
   max-width: 500px;
@@ -317,7 +317,7 @@ body {
   text-decoration: none;
 }
 
-/* Language Images Section */
+
 .language-images {
   display: flex;
   align-items: center;
@@ -337,7 +337,7 @@ body {
   margin: 0 5px;
 }
 
-/* Additional Image Container */
+
 
 .image-container {
   display: flex;
@@ -356,7 +356,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Additional Image Styles */
+
 .additional-image {
   width: 225px;
   height: 305px;
@@ -369,7 +369,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Navbar Styles */
+
 .navbar {
   background-color: #fff;
   padding: .7rem;
@@ -386,7 +386,7 @@ body {
   box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar icon styles */
+
 .navbar div {
   height: 3rem;
   width: 3rem;
@@ -405,19 +405,18 @@ body {
   border-color: black;
 }
 
-/* Active Navbar icon style */
+
 .active {
   background-color: #B1F0F7;
 }
 
-/* Adjust SVG icon size */
+
 .navbar img {
   width: 2rem;
   height: 2rem;
   object-fit: contain;
 }
 
-/* Navbar Styles */
 .navbar2 {
   background-color: #fff;
   padding: .7rem;
@@ -435,7 +434,7 @@ body {
   margin-top: 17.144rem;
 }
 
-/* Navbar icon styles */
+
 .navbar2 div {
   height: 3rem;
   width: 3rem;
@@ -454,19 +453,19 @@ body {
   border-color: black;
 }
 
-/* Active Navbar icon style */
+
 .active {
   background-color: #B1F0F7;
 }
 
-/* Adjust SVG icon size */
+
 .navbar2 img {
   width: 2rem;
   height: 2rem;
   object-fit: contain;
 }
 
-/* Add hover effect to the heart icon */
+
 .heart-icon {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -476,7 +475,7 @@ body {
   transform: scale(1.2);
 }
 
-/* Download Button Styling */
+
 .poep button {
   background: rgb(182, 180, 180);
   border: none;
@@ -506,57 +505,57 @@ body {
 }
 
 
-/* Container Styling */
+
 .about-us {
   text-align: center;
   padding: 50px;
   max-width: 800px;
   margin: auto;
   background: #9fd7dd;
-  /* Semi-transparent background */
+
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Heading Styling */
+
 .about-us h1 {
   font-size: 3em;
   margin-bottom: 20px;
   color: #35393a;
-  /* Gold color for headings */
+
 }
 
-/* Paragraph Styling */
+
 .about-us p {
   font-size: 1.2em;
   line-height: 1.8;
   color: #35393a;
 }
 
-/* Section Styling */
+
 .section {
   margin: 20px 0;
   padding: 15px;
   background: #69969b;
-  /* Light overlay for sections */
+
   border-radius: 8px;
   transition: background 0.3s ease;
 }
 
-/* Hover Effect for Section */
+
 .section:hover {
   background: rgba(255, 255, 255, 0.123);
   cursor: pointer;
 }
 
-/* Section Title Styling */
+
 .section h2 {
   color: #F5F0CD;
   font-size: 1.8em;
   text-decoration: underline;
 }
 
-/* Active Section Content */
+
 .section p {
   margin-top: 10px;
   font-size: 1.1em;
@@ -671,7 +670,7 @@ button {
 
 
 
-/* Media Queries */
+
 @media (max-width: 1024px) {
   .search-input {
     font-size: 14px;
