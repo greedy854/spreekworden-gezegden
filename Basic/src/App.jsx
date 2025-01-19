@@ -223,10 +223,10 @@ function App() {
           abonnementen
         </Link>
 
-        {/* Navigation to "log-in" */}
-        <Link to="/login" className="btn btn-secondary mr-1">
+        {/* Navigation to external "log-in" */}
+        <a href="http://127.0.0.1:8000/" className="btn btn-secondary mr-1">
           Log-in
-        </Link>
+        </a>
       </div>
 
       {/* Logo Section */}
