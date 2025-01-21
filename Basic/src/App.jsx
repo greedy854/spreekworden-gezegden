@@ -264,6 +264,27 @@ function App() {
           </div>
         </div>
 
+        {/* Download Button */}
+        <div className="poep">
+          <Button className="download-button" onClick={downloadImage}>
+            Download Image
+          </Button>
+        </div>
+
+               {/* Image Search Bar */}
+        <div className="search-bar-container">
+          <div className="search-bar">
+            <i className="search-icon fas fa-search"></i>
+            <input
+              type="text"
+              value={imageSearchQuery}
+              onChange={handleImageSearchChange}
+              placeholder="Spreekwoorden zoeken"
+              className="search-input"
+            />
+          </div>
+        </div>
+
         <div className="heart-icon-container">
           <button onClick={toggleLike} className="heart-button">
             <img src={rss} alt="Heart Icon" className="heart-icon" />
@@ -285,25 +306,8 @@ function App() {
           </div>
         </div>
 
-        {/* Download Button */}
-        <div className="poep">
-          <Button className="download-button" onClick={downloadImage}>
-            Download Image
-          </Button>
-        </div>
-        {/* Image Search Bar */}
-        <div className="search-bar-container">
-          <div className="search-bar">
-            <i className="search-icon fas fa-search"></i>
-            <input
-              type="text"
-              value={imageSearchQuery}
-              onChange={handleImageSearchChange}
-              placeholder="Spreekwoorden zoeken"
-              className="search-input"
-            />
-          </div>
-        </div>
+        
+        
 
         {/* Language Header for Dutch */}
         <div className="language-header">
