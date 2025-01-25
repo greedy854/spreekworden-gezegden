@@ -246,7 +246,7 @@ function AboutUs() {
           </Link>
         </div>
         <div className={active === 2 ? "active" : ""}>
-          <Link to="/">
+          <Link to="#">
             <img src={rss} alt="Heart Icon" className="heart-icon" />
           </Link>
         </div>
